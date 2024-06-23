@@ -1,0 +1,33 @@
+@media (max-width: 640px) {
+  .calculator-tip-total-cost {
+    width: 100%;
+  }
+
+  .calculator-tip-total-cost .container {
+    border-radius: 5px;
+    padding: 6px 18px;
+  }
+
+  .calculator-tip-total-cost .writer {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  .calculator-tip-total-cost .select-tip-title {
+    margin-top: 32px;
+  }
+
+  .calculator-tip-total-cost .select-tip-container {
+    justify-content: center;
+    grid-template-columns: 147px 147px;
+    column-gap: 16.5px;
+    grid-template-rows: 48px 48px 48px;
+    row-gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .writer.custom {
+    width: 100%;
+    padding: 18px 6px;
+  }
+}

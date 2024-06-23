@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './AppResponsiveMobile.css';
 import '../css/reset.css'
 import logo from '../images/logo.svg'
 import Calculator from './Calculator';

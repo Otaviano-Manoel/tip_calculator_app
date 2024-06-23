@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import icon_dollar from '../../../images/icon-dollar.svg';
 import icon_person from '../../../images/icon-person.svg';
+import './CalculatorTipandTotalCost.css';
+import './CalculatorTipandTotalCostResponsiveTablet.css';
+import './CalculatorTipandTotalCostResponsiveMobile.css';
 
 class CalculatorTipandTotalCost extends Component {
     render() {
@@ -17,23 +20,23 @@ class CalculatorTipandTotalCost extends Component {
         }
 
         return (
-            <div className='calculator-Tip-Total-Cost'>
-                <label className='bill-title' htmlFor="bill">Bill</label>
-                <div className='bill-container'>
-                    <img src={icon_dollar} alt="Icon Dollar" />
-                    <input className='bill-writer' type="number" id="bill" />
+            <div className='calculator-tip-total-cost'>
+                <label className='bill-title' htmlFor="bill">Bill <span className='error'>Can’t be zero</span></label>
+                <div className='container'>
+                    <img className='icon' src={icon_dollar} alt="Icon Dollar" />
+                    <input className='writer' type="number" id="bill" placeholder='0' />
                 </div>
 
-                <label className='select-tip-title' htmlFor="select-tip">Select Tip %</label>
+                <label className='select-tip-title' htmlFor="select-tip">Select Tip % <span className='error'>Select any value</span></label>
                 <div className='select-tip-container'>
                     {valueTip()}
-                    <input className='value custom' type="number" id="select-tip" />
+                    <input className='writer custom' type="number" id="select-tip" placeholder='Custom' />
                 </div>
 
-                <label className='number-people-title' htmlFor="number-people">Number of People</label>
-                <div className='number-people-container'>
-                    <img src={icon_person} alt="Icon Person" />
-                    <input className='number-people-writer' type="number" id="number-people" />
+                <label className='number-people-title' htmlFor="number-people">Number of People <span className='error'>Can’t be zero</span></label>
+                <div className='container'>
+                    <img className='icon' src={icon_person} alt="Icon Person" />
+                    <input className='writer' type="number" id="number-people" placeholder='0' />
                 </div>
 
             </div>

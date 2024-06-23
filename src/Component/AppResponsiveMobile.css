@@ -1,0 +1,10 @@
+@media (max-width: 640px) {
+  .App {
+    padding-top: 50px;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 40px;
+  }
+}

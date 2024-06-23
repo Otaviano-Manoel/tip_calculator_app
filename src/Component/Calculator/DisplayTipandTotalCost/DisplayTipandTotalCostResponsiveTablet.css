@@ -1,0 +1,26 @@
+@media (max-width: 900px) {
+  .display-tip-total-cost {
+    padding: 30px;
+    width: 275px;
+  }
+
+  .display-tip-total-cost .tip-amount {
+    font-size: 11px;
+  }
+
+  .display-tip-total-cost .person {
+    font-size: 8px;
+  }
+
+  .display-tip-total-cost .value {
+    font-size: 38px;
+  }
+
+  /*Não consegui usar o justify-self*/
+  .display-tip-total-cost .reset {
+    height: 38px;
+    font-size: 15px;
+  }
+
+  /*640px*/
+}

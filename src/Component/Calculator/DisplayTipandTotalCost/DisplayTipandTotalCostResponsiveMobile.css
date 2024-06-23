@@ -1,0 +1,29 @@
+@media (max-width: 640px) {
+  .display-tip-total-cost {
+    padding: 37px 24px 24px 24px;
+    width: 100%;
+  }
+
+  .display-tip-total-cost .container {
+    margin-bottom: 20px;
+  }
+
+  .display-tip-total-cost .tip-amount {
+    font-size: 16px;
+  }
+
+  .display-tip-total-cost .person {
+    font-size: 13px;
+  }
+
+  .display-tip-total-cost .value {
+    font-size: 32px;
+  }
+
+  .display-tip-total-cost .reset {
+    margin-top: 12px;
+    height: 48px;
+
+    font-size: 20px;
+  }
+}

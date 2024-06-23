@@ -1,0 +1,136 @@
+.calculator-tip-total-cost {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-tip-total-cost label {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #5e7a7d;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: #e17457;
+  visibility: hidden;
+}
+
+.error.active {
+  visibility: visible;
+}
+
+.calculator-tip-total-cost .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  padding: 6px 17px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+}
+
+.calculator-tip-total-cost .container:hover {
+  cursor: pointer;
+  border-color: #26c2ae;
+}
+
+.calculator-tip-total-cost .container.input-error:hover {
+  border-color: #e17052;
+}
+
+.calculator-tip-total-cost .icon {
+  width: 10px;
+  height: 15.5px;
+}
+
+.calculator-tip-total-cost .writer {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right;
+  color: #00474b;
+
+  width: 90%;
+  border-radius: 5px;
+  background: none;
+  border-style: none;
+  outline: none;
+}
+
+/* Select Value*/
+.calculator-tip-total-cost .select-tip-title {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.calculator-tip-total-cost .select-tip-container {
+  display: grid;
+  grid-template-columns: 117px 117px 117px;
+  column-gap: 14px;
+  grid-template-rows: 48px 48px;
+  row-gap: 16px;
+  margin-bottom: 40px;
+}
+
+.writer.custom {
+  text-align: center;
+  background-color: #f3f9fa;
+  padding: 14px 6px;
+  width: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.calculator-tip-total-cost .writer.custom:hover {
+  cursor: pointer;
+  border-color: #26c2ae;
+}
+
+.calculator-tip-total-cost .writer.custom.input-error:hover {
+  border-color: #e17052;
+}
+
+.calculator-tip-total-cost .value {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  background-color: #00474b;
+  font-size: 24px;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.calculator-tip-total-cost .value:hover {
+  cursor: pointer;
+  background-color: #9fe8df;
+  color: #00474b;
+}
+
+.calculator-tip-total-cost .value.selected {
+  background-color: #26c2ae;
+  color: #00474b;
+}
+
+/*Resetando alguns elementos*/
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+::placeholder {
+  opacity: 0.35;
+  color: #00474b;
+}
+.writer.custom::placeholder {
+  opacity: 1;
+  color: #547878;
+}

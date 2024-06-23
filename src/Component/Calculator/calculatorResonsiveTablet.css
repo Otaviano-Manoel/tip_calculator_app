@@ -1,0 +1,8 @@
+@media (max-width: 900px) {
+  .calculator {
+    gap: 24px;
+    border-radius: 15px;
+    padding: 16px;
+    height: auto;
+  }
+}

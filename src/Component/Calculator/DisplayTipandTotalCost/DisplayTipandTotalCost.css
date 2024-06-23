@@ -1,0 +1,53 @@
+.display-tip-total-cost {
+  display: flex;
+  flex-direction: column;
+  background-color: #00474b;
+  border-radius: 15px;
+  padding: 40px;
+  width: 413px;
+}
+
+.display-tip-total-cost .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.display-tip-total-cost .tip-amount {
+  font-size: 16px;
+  color: #fff;
+}
+
+.display-tip-total-cost .person {
+  display: block;
+  font-size: 13px;
+  color: #7f9d9f;
+}
+
+.display-tip-total-cost .value {
+  font-size: 48px;
+  color: #26c2ae;
+}
+
+/*Não consegui usar o justify-self*/
+.display-tip-total-cost .reset {
+  margin-top: 97px;
+  background-color: #26c2ae;
+  border-style: none;
+  border-radius: 5px;
+  height: 48px;
+
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 20px;
+  color: #00474b;
+}
+
+.display-tip-total-cost .reset:hover {
+  cursor: pointer;
+}
+
+.display-tip-total-cost .reset:active {
+  background-color: #9fe8df;
+}

@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+  background-color: #c5e4e7;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+.logo {
+  margin-bottom: 88px;
 }
