@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Component/App';
 import reportWebVitals from './reportWebVitals';
+import { ClientAccountProvider } from './Context/ClientAccountContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ClientAccountProvider>
+      <App />
+    </ClientAccountProvider>
   </React.StrictMode>
 );
 

@@ -37,7 +37,7 @@
   border-color: #26c2ae;
 }
 
-.calculator-tip-total-cost .container.input-error:hover {
+.calculator-tip-total-cost .container.input-error {
   border-color: #e17052;
 }
 
@@ -90,7 +90,7 @@
   border-color: #26c2ae;
 }
 
-.calculator-tip-total-cost .writer.custom.input-error:hover {
+.calculator-tip-total-cost .writer.custom.input-error {
   border-color: #e17052;
 }
 

@@ -6,11 +6,12 @@ import logo from '../images/logo.svg'
 import Calculator from './Calculator';
 
 function App() {
+
   return (
     <div className="App">
       <img className='logo' src={logo} alt="Logo" />
       <Calculator />
-    </div>
+    </div >
   );
 }
 
