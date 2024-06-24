@@ -110,8 +110,8 @@ function CalculatorTipAndTotalCost() {
         if (value !== '') {
             str = str + "%";
         }
-        setCustomText(str)
         handleOnChange(event);
+        setCustomText(str)
     }
 
     return (
