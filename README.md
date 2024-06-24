@@ -56,33 +56,33 @@ Using React hooks: I learned how to use several React hooks, such as createConte
 Data persistence with localStorage: I used localStorage to save the state of the information. This way, the information is preserved even after updating the page.
 
 ```tsx
-//Example of useContext.
+// Example of useContext.
 // Creating a context
 import React, { createContext, useContext, useState } from 'react';
 
 // Context creation
-const MeuContexto = createContext();
+const MyContext = createContext();
 
 // Context provider component
-const MeuProvedor = ({ children }) => {
-  const [valor, setValor] = useState('Hello, Context!');
+const MyProvider = ({ children }) => {
+  const [value, setValue] = useState('Hello, Context!');
 
   return (
-    <MeuContexto.Provider value={{ valor, setValor }}>
+    <MyContext.Provider value={{ value, setValue }}>
       {children}
-    </MeuContexto.Provider>
+    </MyContext.Provider>
   );
 };
 
 // Context consumer component
-const MeuComponente = () => {
-  const { valor, setValor } = useContext(MeuContexto);
+const MyComponent = () => {
+  const { value, setValue } = useContext(MyContext);
 
   return (
     <div>
-      <p>{valor}</p>
-      <button onClick={() => setValor('Contexto atualizado!')}>
-        Atualizar Contexto
+      <p>{value}</p>
+      <button onClick={() => setValue('Context updated!')}>
+        Update Context
       </button>
     </div>
   );
@@ -90,9 +90,9 @@ const MeuComponente = () => {
 
 // Using the provider in the application
 const App = () => (
-  <MeuProvedor>
-    <MeuComponente />
-  </MeuProvedor>
+  <MyProvider>
+    <MyComponent />
+  </MyProvider>
 );
 
 export default App;
@@ -103,30 +103,30 @@ export default App;
 import React, { useState, useEffect } from 'react';
 
 const App = () => {
-  const [nome, setNome] = useState('');
+  const [name, setName] = useState('');
 
   // Load localStorage name when loading component
   useEffect(() => {
-    const nomeSalvo = localStorage.getItem('nome');
-    if (nomeSalvo) {
-      setNome(nomeSalvo);
+    const savedName = localStorage.getItem('name');
+    if (savedName) {
+      setName(savedName);
     }
   }, []);
 
   // Save the name to localStorage when updated
   useEffect(() => {
-    localStorage.setItem('nome', nome);
-  }, [nome]);
+    localStorage.setItem('name', name);
+  }, [name]);
 
   return (
     <div>
       <input
         type="text"
-        value={nome}
-        onChange={(e) => setNome(e.target.value)}
-        placeholder="Digite seu nome"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="Enter your name"
       />
-      <p>Nome salvo: {nome}</p>
+      <p>Saved name: {name}</p>
     </div>
   );
 };
