@@ -5,10 +5,13 @@ import './DisplayTipandTotalCostResponsiveMobile.css';
 import { useClientAccount } from '../../../Context/ClientAccountContext';
 import FormatText from '../../../Utils/FormatText';
 import { defaultClientAccount } from '../../../Interface/Manager';
+import classNames from 'classnames';
 
 
 function DisplayTipAndTotalCost() {
     const { clientAccount, setClientAccount } = useClientAccount()!;
+
+    const resetClassName = () => { return classNames('reset', { active: allValuesSet }) }
 
     const allValuesSet = (
         clientAccount.bill.value !== '' &&
@@ -46,7 +49,7 @@ function DisplayTipAndTotalCost() {
                 <p className='tip-amount' > Total <span className='person'>/ person</span></p>
                 <h2 className='value'>${handleTotalValue()}</h2>
             </div>
-            <button onClick={resetValues} className='reset' type="button">RESET</button>
+            <button onClick={resetValues} className={resetClassName()} type="button">RESET</button>
         </div>
     );
 }

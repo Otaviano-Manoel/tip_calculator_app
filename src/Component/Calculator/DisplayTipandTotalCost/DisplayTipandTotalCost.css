@@ -33,7 +33,7 @@
 /*Não consegui usar o justify-self*/
 .display-tip-total-cost .reset {
   margin-top: 97px;
-  background-color: #26c2ae;
+  background-color: #0d686d;
   border-style: none;
   border-radius: 5px;
   height: 48px;
@@ -44,10 +44,11 @@
   color: #00474b;
 }
 
-.display-tip-total-cost .reset:hover {
-  cursor: pointer;
+.display-tip-total-cost .reset.active {
+  background-color: #26c2ae;
 }
 
-.display-tip-total-cost .reset:active {
+.display-tip-total-cost .reset:hover {
   background-color: #9fe8df;
+  cursor: pointer;
 }
